@@ -1,0 +1,31 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Windows image file caches
+Thumbs.db 
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+.*
+!.gitignore
+*~
+
+# KDE
+.directory
+
+.DS_Store
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
