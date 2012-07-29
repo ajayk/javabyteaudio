@@ -1,21 +1,27 @@
-package me.emily;
+package songs;
 
 import java.util.Iterator;
 
 import javax.sound.sampled.LineUnavailableException;
+
+import me.emily.FullRangeSong;
+import me.emily.LSBSong;
+import me.emily.Player;
+import me.emily.Song;
 
 import com.google.common.collect.AbstractIterator;
 import com.google.common.collect.FluentIterable;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Iterators;
 
-public class TestSong1 extends Song {
+public class TestSong1 extends LSBSong {
 
 	public static void main(String[] args) throws LineUnavailableException {
 		new Player().play(new TestSong1());
 	}
 
 	@Override
+	protected
 	Iterable<Integer> song() {
 
 		Iterable<Integer> a = Iterables.limit(part1(),500500);
